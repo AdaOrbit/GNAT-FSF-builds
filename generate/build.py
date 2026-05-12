@@ -202,6 +202,7 @@ class Targets(Yamlable[Host]):
             "x86_64-elf",
             "avr-elf",
             "xtensa-esp32-elf",
+            "sh-elf",
         ]
 
 

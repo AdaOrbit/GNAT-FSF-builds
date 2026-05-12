@@ -171,6 +171,10 @@ class GCC(spec("gh-artifact")):
             args += cross_commons
             args.append("--enable-multilib")
 
+        if self.env.target.triplet == "sh-elf":
+            args += cross_commons
+            args.append("--with-multilib-list=m3,m4-nofpu")
+
         return args
 
     def artifact_build(self):

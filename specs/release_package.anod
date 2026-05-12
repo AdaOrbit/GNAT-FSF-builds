@@ -144,6 +144,13 @@ class ReleasePackage(spec("common")):
                     Anod.Dependency("gdb", track=True),
                 ]
 
+            elif self.env.target.triplet == "sh-elf":
+                return [
+                    Anod.Dependency("gcc", track=True),
+                    Anod.Dependency("gdb", track=True),
+                    #Anod.Dependency("libfxcg", track=True),
+                ]
+
             elif self.env.host.triplet == self.env.target.triplet:
                 # Native
                 return [

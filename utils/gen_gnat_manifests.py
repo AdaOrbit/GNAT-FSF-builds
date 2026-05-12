@@ -17,6 +17,7 @@ targets = {
     "riscv64-elf": {"crate": "gnat_riscv64_elf", "description": "RISC-V cross-compiler"},
     "x86_64-elf": {"crate": "gnat_x86_64_elf", "description": "x86-64 cross-compiler"},
     "avr-elf": {"crate": "gnat_avr_elf", "description": "AVR cross-compiler"},
+    "sh-elf": {"crate": "gnat_sh_elf", "description": "SuperH cross-compiler"}
 }
 
 
