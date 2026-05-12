@@ -1,5 +1,9 @@
 # GNAT-FSF-builds
 
+> [!WARNING]
+> You need to patch e3-core by adding superh into its database
+> Note to self: write .patch file
+
 Builds of the GNAT Ada compiler from FSF GCC releases.
 
 We aim to provide builds for various platforms on every major GCC release. There are also weekly unstable "snapshots" builds of GCC's next version, to be found in the `snapshots-index` branch.
