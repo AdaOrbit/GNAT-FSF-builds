@@ -8,7 +8,7 @@ import sys
 class EmbeddedRuntimes(spec("common")):
     @property
     def version(self):
-        return "15.1.0-1"
+        return "16.1.0-1"
 
     @property
     def tarball(self):
