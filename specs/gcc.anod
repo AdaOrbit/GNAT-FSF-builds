@@ -80,7 +80,10 @@ class GCC(spec("gh-artifact")):
 
         if self.env.target.os.is_bareboard and not self.bootstrap:
             if self.env.target.triplet == "sh-elf":
-                deps.append(Anod.Dependency("libfxcg"))
+                # TODO: fix libfxcg anod definition
+                #
+                # deps.append(Anod.Dependency("libfxcg"))
+                ...
             else:
                 deps.append(Anod.Dependency("newlib"))
 
